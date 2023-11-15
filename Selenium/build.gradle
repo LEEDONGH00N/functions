@@ -27,6 +27,9 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'org.modelmapper:modelmapper:3.1.0'
+
 	implementation 'org.seleniumhq.selenium:selenium-java:4.1.4'
 	implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.1.4'
 

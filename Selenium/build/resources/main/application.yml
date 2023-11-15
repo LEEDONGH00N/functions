@@ -11,3 +11,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+#  data:
+#    mongodb:
+#      host: localhost          # MongoDB 호스트 주소
+#      port: 27017              # MongoDB 포트
+#      database: hellomongo     # 사용자 데이터베이스 이름
+#      username: lee            # MongoDB 사용자 이름
+#      password: password       # MongoDB 사용자

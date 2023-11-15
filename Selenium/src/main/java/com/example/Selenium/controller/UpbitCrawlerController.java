@@ -13,12 +13,15 @@ import java.util.List;
 @RestController
 @Slf4j
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/crawl")
+@RequestMapping("/crawl")
 public class UpbitCrawlerController {
     private final UpbitCrawlerService upbitCrawlerService;
-
     @GetMapping("/upbit/notices")
     public List<NoticeDto> crawlUpbitNotices() {
-        return upbitCrawlerService.crawlUpbitNotices();
+        return this.upbitCrawlerService.crawlUpbitNotices();
+    }
+    @GetMapping("/show-all/notices")
+    public List<NoticeDto> showCrawledNotices(){
+        return this.upbitCrawlerService.showAll();
     }
 }

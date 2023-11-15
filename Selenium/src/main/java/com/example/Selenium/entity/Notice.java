@@ -1,10 +1,8 @@
 package com.example.Selenium.entity;
-
-
 import lombok.*;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -19,13 +17,15 @@ public class Notice {
     private Long id;
     private String title;
     private String link;
+    private String views;
     @Column(nullable = false)
-    private LocalDate date;
+    private LocalDateTime date;
 
     @Builder
-    public Notice(String title, String link, LocalDate date) {
+    public Notice(String title, String link, LocalDateTime date, String views) {
         this.title = title;
         this.link = link;
         this.date = date;
+        this.views = views;
     }
 }
